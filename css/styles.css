@@ -1283,12 +1283,12 @@ img{
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    color: #2e2f42;
+    color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea:focus{
     border-color: #4d5ae5;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button{
@@ -1348,10 +1348,11 @@ img{
     transition:
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
 }
 
 .modal-check:checked + .modal-check-label .span-checkbox{
-    background-color: #4d5ae5;
+    background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
 }
